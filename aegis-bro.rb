@@ -14,11 +14,11 @@ class AegisBro < Formula
   conflicts_with "bro", :because => "This is a different bro version"
 
   def install
-     bin.install Dir["bin/*"]
-     include.install Dir["include/*"]
-     lib.install Dir["lib/*"]
-     share.install Dir["share/*"]
-     etc.install Dir["etc/*"]
+     bin.install Dir["2.4.1/bin/*"]
+     include.install Dir["2.4.1/include/*"]
+     lib.install Dir["2.4.1/lib/*"]
+     share.install Dir["2.4.1/share/*"]
+     etc.install Dir["2.4.1/etc/*"]
   end
 
   test do
