@@ -41,7 +41,7 @@ class AegisAggregator < Formula
             <string>#{opt_bin}/AegisAggregator</string>
         </array>
         <key>WorkingDirectory</key>
-        <string>#{HOMEBREW_PREFIX}</string>
+        <string>#{opt_prefix}</string>
         <key>StandardErrorPath</key>
         <string>/dev/null</string>
         <key>StandardOutPath</key>
