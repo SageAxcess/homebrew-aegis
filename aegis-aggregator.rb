@@ -11,10 +11,9 @@ class AegisAggregator < Formula
   depends_on "zeromq"
 
   def install
-     queue = prefix/"conf"
+     conf = prefix/"conf"
      bin.install Dir["1.0.2/bin/*"]
      conf.install Dir["1.0.2/conf/*"]
-#TODO: install conf, create folders for queue and logs
   end
 
   def post_install
