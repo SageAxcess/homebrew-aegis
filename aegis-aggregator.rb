@@ -3,7 +3,7 @@ require 'formula'
 class AegisAggregator < Formula
   desc "Aegis Aggregator service"
   homepage "https://sageaxcess.com"
-  url "http://itserviceplus.net/aegis-aggregator.tar.gz"
+  url "http://itserviceplus.net/brew/aegis-aggregator.tar.gz"
   sha256 "3af0281ee9ab7a427894765a3a897536db76db7b180e8bee5afff220b7403125"
   version "1.0.2"
 

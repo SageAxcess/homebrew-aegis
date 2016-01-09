@@ -3,7 +3,7 @@ require 'formula'
 class AegisBro < Formula
   desc "Network security monitor"
   homepage "https://www.bro.org"
-  url "http://itserviceplus.net/aegis-bro.tar.gz"
+  url "http://itserviceplus.net/brew/aegis-bro.tar.gz"
   sha256 "0f38ca077dcdf51dc50fc356cfa9d0c0017f699801612543d0c4402525827ca1"
   version "2.4.1"
 

@@ -3,7 +3,7 @@ require 'formula'
 class AegisAgent < Formula
   desc "Aegis Local Agent service"
   homepage "https://sageaxcess.com"
-  url "http://itserviceplus.net/aegis-agent.tar.gz"
+  url "http://itserviceplus.net/brew/aegis-agent.tar.gz"
   sha256 "86355543710def04d4aa6cb0b9ee5030e4612365c139a2234da3fafe17532748 "
   version "1.0.0"
 
