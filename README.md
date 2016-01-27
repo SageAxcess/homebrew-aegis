@@ -1,6 +1,6 @@
 # homebrew-aegis
 
-Formula's for Aegis platform
+Formulas for Aegis platform
 
 Tap me
 ------
