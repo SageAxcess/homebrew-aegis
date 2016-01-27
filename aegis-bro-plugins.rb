@@ -2,7 +2,7 @@ require 'formula'
 
 class AegisBroPlugins < Formula
   version "1.0.5"
-  url 'http://itserviceplus.net/brew/aegis-bro-plugins.tar.gz'
+  url 'http://build.sage.axcess.com/brew/aegis-bro-plugins_1.0.5_x86_64.tar.gz'
   homepage 'http://www.sageaxcess.com'
   sha256 'bcf9c9c5d11c761f5696e752c85231f420a214b6352616a836781fad8fb35bc7'
 
