@@ -18,6 +18,8 @@ class AegisBroPlugins < Formula
     system "ln -s #{prefix}/plugins/SageAxcess_SMB1 #{Formula["aegis-bro"].lib}/bro/plugins/SageAxcess_SMB1"
     system "ln -s #{prefix}/plugins/SageAxcess_TDS #{Formula["aegis-bro"].lib}/bro/plugins/SageAxcess_TDS"
     system "ln -s #{prefix}/plugins/SageAxcess_LDAP #{Formula["aegis-bro"].lib}/bro/plugins/SageAxcess_LDAP"
+    system "ln -s #{prefix}/plugins/SageAxcess_HTTPReader #{Formula["aegis-bro"].lib}/bro/plugins/SageAxcess_HTTPReader"
+    system "ln -s #{prefix}/plugins/SageAxcess_Updater #{Formula["aegis-bro"].lib}/bro/plugins/SageAxcess_Updater"
     system "cp -Rf #{prefix}/scripts/* #{Formula["aegis-bro"].share}/bro"
   end
 end
