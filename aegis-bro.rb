@@ -14,6 +14,9 @@ class AegisBro < Formula
   conflicts_with "bro", :because => "This is a different bro version"
 
   def install
+     system "echo", "WARNING: If you want to use bro without sudo, run"
+     system "echo", "sudo chmod +r /dev/bpf*"
+
      bin.install Dir["2.4.1/bin/*"]
      include.install Dir["2.4.1/include/*"]
      lib.install Dir["2.4.1/lib/*"]
