@@ -19,6 +19,7 @@ class AegisBro < Formula
      lib.install Dir["2.4.1/lib/*"]
      share.install Dir["2.4.1/share/*"]
      etc.install Dir["2.4.1/etc/*"]
+     (prefix/"conf").install Dir["2.4.1/conf/*"]
   end
 
   plist_options :startup => true
