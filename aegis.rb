@@ -1,20 +1,19 @@
 require 'formula'
 
-class AegisBro < Formula
+class Aegis < Formula
   desc "Network security monitor"
   homepage "https://www.bro.org"
-  url "http://build.sageaxcess.com/brew/aegis-bro_2.4.1_x86_64.tar.gz"
+  url "http://build.sageaxcess.com/brew/aegis_2.4.1_x86_64.tar.gz"
   sha256 "6db85de15aea86b9d6ea14b7f31ee1085dcce2443f2ca9f76785d34bb51f0b66"
   version "2.4.1"
 
   depends_on "openssl"
   depends_on "geoip" => :recommended
 
-  conflicts_with "brotli", :because => "Both install a `bro` binary"
   conflicts_with "bro", :because => "This is a different bro version"
 
   def install
-     system "echo", "WARNING: If you want to use bro without sudo, run"
+     system "echo", "WARNING: If you want to use aegis without sudo, run"
      system "echo", "sudo chmod +r /dev/bpf*"
 
      bin.install Dir["2.4.1/bin/*"]
@@ -39,7 +38,7 @@ class AegisBro < Formula
         <true/>
         <key>ProgramArguments</key>
         <array>
-            <string>#{opt_bin}/bro</string>
+            <string>#{opt_bin}/aegis</string>
         </array>
         <key>WorkingDirectory</key>
         <string>#{opt_prefix}</string>
@@ -53,6 +52,6 @@ class AegisBro < Formula
   end
 
   test do
-    system "#{bin}/bro", "--version"
+    system "#{bin}/aegis", "--version"
   end
 end
