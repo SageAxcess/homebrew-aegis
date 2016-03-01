@@ -4,7 +4,7 @@ class AegisAggregator < Formula
   desc "Aegis Aggregator service"
   homepage "https://sageaxcess.com"
   url "http://build.sageaxcess.com/brew/aegis-aggregator_1.0.2_x86_64.tar.gz"
-  sha256 "9af95e877fe576a07d59afb5afb9c00ff5f0504d59d871d3d451f70839363589"
+  sha256 "1d6cc9c032db64ed906486975b7abb3a572dfa3d9028530a6aaa61c4429e02bd"
   version "1.0.2"
 
   depends_on "msgpack"
