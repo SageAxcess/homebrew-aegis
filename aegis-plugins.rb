@@ -7,6 +7,7 @@ class AegisPlugins < Formula
   sha256 "6c0f172d0a1652ba10e9af0be8b2f86eee1daea620d9bcc666fd3731f139d39a"
 
   depends_on "aegis"
+  depends_on "gnutls"
 
   def install
     system "echo", "Installing aegis plugins at #{Formula["aegis"].lib}/bro/plugins"
