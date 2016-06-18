@@ -21,6 +21,7 @@ class AegisPlugins < Formula
     system "ln -s #{prefix}/plugins/SageAxcess_LDAP #{Formula["aegis"].lib}/bro/plugins/SageAxcess_LDAP"
     system "ln -s #{prefix}/plugins/SageAxcess_HTTPReader #{Formula["aegis"].lib}/bro/plugins/SageAxcess_HTTPReader"
     system "ln -s #{prefix}/plugins/SageAxcess_Updater #{Formula["aegis"].lib}/bro/plugins/SageAxcess_Updater"
+    system "ln -s #{prefix}/plugins/SageAxcess_PcapRemote #{Formula["aegis"].lib}/bro/plugins/SageAxcess_PcapRemote"
     system "cp -Rf #{prefix}/scripts/* #{Formula["aegis"].share}/bro"
   end
 end
