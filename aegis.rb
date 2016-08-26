@@ -4,7 +4,7 @@ class Aegis < Formula
   desc "Network security monitor"
   homepage "https://www.bro.org"
   url "http://build.sageaxcess.com/brew/aegis_2.4.1_x86_64.tar.gz"
-  sha256 "0e83e036686df18f660133d2dc55bed1f59e642e3bd0907c0edf94d321667ca7"
+  sha256 "bfd4503a352514b598e1c42257b346f3a038bd93329ce1b8b237105cb8ac89dd"
   version "2.4.1"
 
   depends_on "openssl"
