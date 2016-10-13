@@ -4,7 +4,7 @@ class AegisPlugins < Formula
   version "1.0.5"
   url 'http://build.sageaxcess.com/brew/aegis-plugins_1.0.5_x86_64.tar.gz'
   homepage 'http://www.sageaxcess.com'
-  sha256 "169a4a5f52c3271f7e04e26ccdb14375bcf3bf58dda7db64a1324d921d0d8374"
+  sha256 "bae03b65b7af499be46adb0d29abb78f9b07baada8fa3f105135169079015cfb"
 
   depends_on "aegis"
   depends_on "gnutls"
