@@ -22,6 +22,9 @@ class Aegis < Formula
      share.install Dir["2.4.1/share/*"]
      etc.install Dir["2.4.1/etc/*"]
      (prefix/"conf").install Dir["2.4.1/conf/*"]
+
+
+     system "2.4.1/bin/init-config.sh"
   end
 
   plist_options :startup => true
