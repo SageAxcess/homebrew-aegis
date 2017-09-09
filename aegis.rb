@@ -1,13 +1,16 @@
 require 'formula'
 
 class Aegis < Formula
-  desc "Network security monitor"
-  homepage "https://www.bro.org"
-  url "http://build.sageaxcess.com/brew/aegis_2.4.1_x86_64.tar.gz"
+  desc "AEGIS Network Monitor"
+  homepage "https://changedynamix.io"
+  url "https://aegis-osx.s3.amazonaws.com/aegis_2.4.4_x86_64.tar.gz"
   sha256 "b628af144664e4db8a973caa00e2d059eadcb7900d6d7d3cc17547a6b4fa127d"
-  version "2.4.1"
+  version "2.4.4"
 
   depends_on "openssl"
+  depends_on "gnutls"
+  depends_on "msgpack"
+  depends_on "zeromq"
   depends_on "geoip" => :recommended
 
   conflicts_with "bro", :because => "This is a different bro version"
@@ -16,12 +19,12 @@ class Aegis < Formula
      system "echo", "WARNING: If you want to use aegis without sudo, run"
      system "echo", "sudo chmod +r /dev/bpf*"
 
-     bin.install Dir["2.4.1/bin/*"]
-     include.install Dir["2.4.1/include/*"]
-     lib.install Dir["2.4.1/lib/*"]
-     share.install Dir["2.4.1/share/*"]
-     etc.install Dir["2.4.1/etc/*"]
-     (prefix/"conf").install Dir["2.4.1/conf/*"]
+     bin.install Dir["2.4.4/bin/*"]
+     include.install Dir["2.4.4/include/*"]
+     lib.install Dir["2.4.4/lib/*"]
+     share.install Dir["2.4.4/share/*"]
+     etc.install Dir["2.4.4/etc/*"]
+     (prefix/"conf").install Dir["2.4.4/conf/*"]
   end
 
   plist_options :startup => true
