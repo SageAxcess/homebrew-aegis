@@ -4,7 +4,7 @@ class Aegis < Formula
   desc "AEGIS Network Monitor"
   homepage "https://changedynamix.io"
   url "https://aegis-osx.s3.amazonaws.com/aegis_2.4.4_x86_64.tar.gz"
-  sha256 "937f953b9405b8e11418f220b59d3af7aff305e7f9fd7a94d27347a623384dd2"
+  sha256 "84cb20b6030b2e24c48281c4efda23c84d86fcd7c27d29b72be438899c3b05b9"
   version "2.4.4"
 
   depends_on "openssl"
